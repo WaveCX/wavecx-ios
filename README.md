@@ -1,4 +1,4 @@
-# WaveCx iOS SDK
+# WaveCX iOS SDK
 
 The WaveCx iOS SDK provides tools to integrate targeted content and user-triggered modals into your iOS applications.
 
@@ -11,6 +11,13 @@ The WaveCx iOS SDK provides tools to integrate targeted content and user-trigger
 ## Installation
 
 To integrate the WaveCx iOS SDK into your project, add the SDK to your dependencies and ensure it is properly linked in your Xcode project.
+
+### CocoaPods
+Add the WaveCX pod into your Podfile and run pod install.
+
+    target :YourTargetName do
+      pod 'WaveCxSdk'
+    end
 
 ## Usage
 
