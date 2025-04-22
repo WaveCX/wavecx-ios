@@ -1,0 +1,388 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "WaveCxSdk",
+    "printedName": "WaveCxSdk",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WaveCxSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "WaveCxSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WaveCxSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WaveCxSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WaveCxConfig",
+        "printedName": "WaveCxConfig",
+        "declKind": "Struct",
+        "usr": "s:9WaveCxSdk0aB6ConfigV",
+        "mangledName": "$s9WaveCxSdk0aB6ConfigV",
+        "moduleName": "WaveCxSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WaveCx",
+        "printedName": "WaveCx",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(organizationCode:apiBaseUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WaveCx",
+                "printedName": "WaveCxSdk.WaveCx",
+                "usr": "s:9WaveCxSdk0aB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C6create16organizationCode10apiBaseUrlACSS_SSSgtFZ",
+            "mangledName": "$s9WaveCxSdk0aB0C6create16organizationCode10apiBaseUrlACSS_SSSgtFZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WaveCx",
+                "printedName": "WaveCxSdk.WaveCx",
+                "usr": "s:9WaveCxSdk0aB0C"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9WaveCxSdk0aB0C6sharedACvpZ",
+            "mangledName": "$s9WaveCxSdk0aB0C6sharedACvpZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WaveCx",
+                    "printedName": "WaveCxSdk.WaveCx",
+                    "usr": "s:9WaveCxSdk0aB0C"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9WaveCxSdk0aB0C6sharedACvgZ",
+                "mangledName": "$s9WaveCxSdk0aB0C6sharedACvgZ",
+                "moduleName": "WaveCxSdk",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configureShared",
+            "printedName": "configureShared(organizationCode:apiBaseUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C15configureShared16organizationCode10apiBaseUrlySS_SSSgtFZ",
+            "mangledName": "$s9WaveCxSdk0aB0C15configureShared16organizationCode10apiBaseUrlySS_SSSgtFZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startUserSession",
+            "printedName": "startUserSession(userId:userIdVerification:userAttributes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C16startUserSession6userId0gH12Verification0G10AttributesySS_SSSgypSgtYaKF",
+            "mangledName": "$s9WaveCxSdk0aB0C16startUserSession6userId0gH12Verification0G10AttributesySS_SSSgypSgtYaKF",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "endUserSession",
+            "printedName": "endUserSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C14endUserSessionyyF",
+            "mangledName": "$s9WaveCxSdk0aB0C14endUserSessionyyF",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "triggerPoint",
+            "printedName": "triggerPoint(triggerPointCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C12triggerPoint0dE4CodeySS_tF",
+            "mangledName": "$s9WaveCxSdk0aB0C12triggerPoint0dE4CodeySS_tF",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hasUserTriggeredContent",
+            "printedName": "hasUserTriggeredContent()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C23hasUserTriggeredContentSbyF",
+            "mangledName": "$s9WaveCxSdk0aB0C23hasUserTriggeredContentSbyF",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showUserTriggeredContent",
+            "printedName": "showUserTriggeredContent()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C24showUserTriggeredContentyyF",
+            "mangledName": "$s9WaveCxSdk0aB0C24showUserTriggeredContentyyF",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9WaveCxSdk0aB0C",
+        "mangledName": "$s9WaveCxSdk0aB0C",
+        "moduleName": "WaveCxSdk",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "StringLiteral",
+      "offset": 3233,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}
