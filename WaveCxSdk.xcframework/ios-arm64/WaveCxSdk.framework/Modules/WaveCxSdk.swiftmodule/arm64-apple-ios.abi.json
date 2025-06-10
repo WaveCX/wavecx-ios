@@ -6,202 +6,6 @@
     "children": [
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WaveCxSdk"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "WaveCxDelegate",
-        "printedName": "WaveCxDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "onError",
-            "printedName": "onError(error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "any Swift.Error",
-                "usr": "s:s5ErrorP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9WaveCxSdk0aB8DelegateP7onError5errorys0F0_p_tF",
-            "mangledName": "$s9WaveCxSdk0aB8DelegateP7onError5errorys0F0_p_tF",
-            "moduleName": "WaveCxSdk",
-            "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
-            "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onContentReceived",
-            "printedName": "onContentReceived(content:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[WaveCxSdk.Content]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Content",
-                    "printedName": "WaveCxSdk.Content",
-                    "usr": "s:9WaveCxSdk7ContentV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9WaveCxSdk0aB8DelegateP17onContentReceived7contentySayAA0F0VG_tF",
-            "mangledName": "$s9WaveCxSdk0aB8DelegateP17onContentReceived7contentySayAA0F0VG_tF",
-            "moduleName": "WaveCxSdk",
-            "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
-            "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onWillShowContent",
-            "printedName": "onWillShowContent(content:cancel:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Content",
-                "printedName": "WaveCxSdk.Content",
-                "usr": "s:9WaveCxSdk7ContentV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "typeAttributes": [
-                  "noescape"
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9WaveCxSdk0aB8DelegateP17onWillShowContent7content6cancelyAA0H0V_yyXEtF",
-            "mangledName": "$s9WaveCxSdk0aB8DelegateP17onWillShowContent7content6cancelyAA0H0V_yyXEtF",
-            "moduleName": "WaveCxSdk",
-            "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
-            "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onDidShowContent",
-            "printedName": "onDidShowContent(content:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Content",
-                "printedName": "WaveCxSdk.Content",
-                "usr": "s:9WaveCxSdk7ContentV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9WaveCxSdk0aB8DelegateP16onDidShowContent7contentyAA0H0V_tF",
-            "mangledName": "$s9WaveCxSdk0aB8DelegateP16onDidShowContent7contentyAA0H0V_tF",
-            "moduleName": "WaveCxSdk",
-            "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
-            "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onContentDismissed",
-            "printedName": "onContentDismissed()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9WaveCxSdk0aB8DelegateP18onContentDismissedyyF",
-            "mangledName": "$s9WaveCxSdk0aB8DelegateP18onContentDismissedyyF",
-            "moduleName": "WaveCxSdk",
-            "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
-            "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:9WaveCxSdk0aB8DelegateP",
-        "mangledName": "$s9WaveCxSdk0aB8DelegateP",
-        "moduleName": "WaveCxSdk",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -879,6 +683,202 @@
         "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "WaveCxSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WaveCxSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WaveCxDelegate",
+        "printedName": "WaveCxDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB8DelegateP7onError5errorys0F0_p_tF",
+            "mangledName": "$s9WaveCxSdk0aB8DelegateP7onError5errorys0F0_p_tF",
+            "moduleName": "WaveCxSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
+            "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onContentReceived",
+            "printedName": "onContentReceived(content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[WaveCxSdk.Content]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Content",
+                    "printedName": "WaveCxSdk.Content",
+                    "usr": "s:9WaveCxSdk7ContentV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB8DelegateP17onContentReceived7contentySayAA0F0VG_tF",
+            "mangledName": "$s9WaveCxSdk0aB8DelegateP17onContentReceived7contentySayAA0F0VG_tF",
+            "moduleName": "WaveCxSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
+            "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onWillShowContent",
+            "printedName": "onWillShowContent(content:cancel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Content",
+                "printedName": "WaveCxSdk.Content",
+                "usr": "s:9WaveCxSdk7ContentV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB8DelegateP17onWillShowContent7content6cancelyAA0H0V_yyXEtF",
+            "mangledName": "$s9WaveCxSdk0aB8DelegateP17onWillShowContent7content6cancelyAA0H0V_yyXEtF",
+            "moduleName": "WaveCxSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
+            "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDidShowContent",
+            "printedName": "onDidShowContent(content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Content",
+                "printedName": "WaveCxSdk.Content",
+                "usr": "s:9WaveCxSdk7ContentV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB8DelegateP16onDidShowContent7contentyAA0H0V_tF",
+            "mangledName": "$s9WaveCxSdk0aB8DelegateP16onDidShowContent7contentyAA0H0V_tF",
+            "moduleName": "WaveCxSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
+            "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onContentDismissed",
+            "printedName": "onContentDismissed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB8DelegateP18onContentDismissedyyF",
+            "mangledName": "$s9WaveCxSdk0aB8DelegateP18onContentDismissedyyF",
+            "moduleName": "WaveCxSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
+            "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9WaveCxSdk0aB8DelegateP",
+        "mangledName": "$s9WaveCxSdk0aB8DelegateP",
+        "moduleName": "WaveCxSdk",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8

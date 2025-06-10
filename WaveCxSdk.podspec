@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'WaveCxSdk'
-  s.version      = '0.1.1'
+  s.version      = '0.1.2'
   s.summary      = 'WaveCX SDK for iOS'
   s.description  = 'WaveCX SDK for iOS. Supports iOS 15 and above.'
   s.homepage     = 'https://github.com/wavecx/wavecx-ios'
