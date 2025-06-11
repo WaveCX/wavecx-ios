@@ -886,8 +886,22 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "Array",
+      "offset": 2694,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2853,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
       "kind": "StringLiteral",
-      "offset": 3390,
+      "offset": 3449,
       "length": 2,
       "value": "\"\""
     }
