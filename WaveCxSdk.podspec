@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary      = 'WaveCX SDK for iOS'
   s.description  = 'WaveCX SDK for iOS. Supports iOS 15 and above.'
   s.homepage     = 'https://github.com/wavecx/wavecx-ios'
-  s.license      = { :type => 'Apache 2.0' }
+  s.license = { :type => 'Apache 2.0', :text => 'See LICENSE at https://github.com/WaveCX/wavecx-ios/blob/main/LICENSE' }
   s.author       = { 'Jonathan Raftery' => 'jonathan.raftery@wavecx.com' }
 
   s.platform     = :ios, '15.0'
