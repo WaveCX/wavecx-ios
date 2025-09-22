@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name WaveCxSdk
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Foundation
 import Swift
 import UIKit
@@ -9,13 +9,6 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public protocol WaveCxDelegate : AnyObject {
-  func onError(error: any Swift.Error)
-  func onContentReceived(content: [WaveCxSdk.Content])
-  func onWillShowContent(content: WaveCxSdk.Content, cancel: () -> Swift.Void)
-  func onDidShowContent(content: WaveCxSdk.Content)
-  func onContentDismissed()
-}
 public struct Content : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -23,12 +16,18 @@ public struct WaveCxConfig {
 }
 @objc @_hasMissingDesignatedInitializers final public class WaveCx : ObjectiveC.NSObject {
   weak final public var delegate: (any WaveCxSdk.WaveCxDelegate)?
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func create(organizationCode: Swift.String, apiBaseUrl: Swift.String? = nil) -> WaveCxSdk.WaveCx
+  #endif
   public static var shared: WaveCxSdk.WaveCx {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func configureShared(organizationCode: Swift.String, apiBaseUrl: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func startUserSession(userId: Swift.String, userIdVerification: Swift.String? = nil, userAttributes: Any? = nil) async
+  #endif
   final public func endUserSession()
   final public func triggerPoint(triggerPointCode: Swift.String)
   final public func hasPopupContentForTriggerPoint(triggerPointCode: Swift.String) -> Swift.Bool
@@ -36,4 +35,11 @@ public struct WaveCxConfig {
   final public func hasUserTriggeredContent() -> Swift.Bool
   final public func showUserTriggeredContent()
   @objc deinit
+}
+public protocol WaveCxDelegate : AnyObject {
+  func onError(error: any Swift.Error)
+  func onContentReceived(content: [WaveCxSdk.Content])
+  func onWillShowContent(content: WaveCxSdk.Content, cancel: () -> Swift.Void)
+  func onDidShowContent(content: WaveCxSdk.Content)
+  func onContentDismissed()
 }
