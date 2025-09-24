@@ -885,6 +885,13 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/wavecx-ios\/WaveCx\/WaveCxSdk\/FeaturetteViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 546,
+      "length": 14,
+      "value": "\"chevron.left\""
+    },
+    {
       "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
       "kind": "Array",
       "offset": 2694,
