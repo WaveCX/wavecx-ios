@@ -16,18 +16,16 @@ public struct WaveCxConfig {
 }
 @objc @_hasMissingDesignatedInitializers final public class WaveCx : ObjectiveC.NSObject {
   weak final public var delegate: (any WaveCxSdk.WaveCxDelegate)?
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func create(organizationCode: Swift.String, apiBaseUrl: Swift.String? = nil) -> WaveCxSdk.WaveCx
-  #endif
+  public static func create(organizationCode: Swift.String) -> WaveCxSdk.WaveCx
+  public static func create(organizationCode: Swift.String, apiBaseUrl: Swift.String) -> WaveCxSdk.WaveCx
   public static var shared: WaveCxSdk.WaveCx {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func configureShared(organizationCode: Swift.String, apiBaseUrl: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public func startUserSession(userId: Swift.String, userIdVerification: Swift.String? = nil, userAttributes: Any? = nil) async
-  #endif
+  public static func configureShared(organizationCode: Swift.String)
+  public static func configureShared(organizationCode: Swift.String, apiBaseUrl: Swift.String)
+  final public func startUserSession(userId: Swift.String) async
+  final public func startUserSession(userId: Swift.String, userIdVerification: Swift.String) async
+  final public func startUserSession(userId: Swift.String, userAttributes: Any) async
   final public func endUserSession()
   final public func triggerPoint(triggerPointCode: Swift.String)
   final public func hasPopupContentForTriggerPoint(triggerPointCode: Swift.String) -> Swift.Bool
@@ -39,7 +37,7 @@ public struct WaveCxConfig {
 public protocol WaveCxDelegate : AnyObject {
   func onError(error: any Swift.Error)
   func onContentReceived(content: [WaveCxSdk.Content])
-  func onWillShowContent(content: WaveCxSdk.Content, cancel: () -> Swift.Void)
+  func onWillShowContent(content: WaveCxSdk.Content, cancel: @escaping () -> Swift.Void)
   func onDidShowContent(content: WaveCxSdk.Content)
   func onContentDismissed()
 }
