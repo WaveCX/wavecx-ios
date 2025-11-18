@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name WaveCxSdk
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import Foundation
 import Swift
 import UIKit
@@ -9,20 +9,71 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct Content : Swift.Decodable {
+import os.log
+import os
+public enum MockContentStrategy {
+  case allTriggerPoints
+  case specificTriggerPoints([Swift.String])
+}
+public struct MockModeConfig {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(enabled: Swift.Bool = false, networkDelay: Foundation.TimeInterval? = nil, contentStrategy: WaveCxSdk.MockContentStrategy = .allTriggerPoints, customContent: [Swift.String : [WaveCxSdk.Content]]? = nil)
+  #endif
+}
+public let WaveCxVersion: Swift.String
+public struct Content : Swift.Codable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(triggerPoint: Swift.String, viewUrl: Swift.String, presentationType: Swift.String, mobileModal: WaveCxSdk.ModalConfig?)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CloseButtonConfig : Swift.Codable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(style: Swift.String, label: Swift.String?)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ModalConfig : Swift.Codable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(type: Swift.String?, title: Swift.String?, headerColor: Swift.String?, closeButton: WaveCxSdk.CloseButtonConfig?)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct WaveCxConfig {
 }
+public struct RetryConfig {
+  public init(maxAttempts: Swift.Int = 3, initialDelay: Foundation.TimeInterval = 1.0, maxDelay: Foundation.TimeInterval = 32.0, multiplier: Swift.Double = 2.0)
+  public static let `default`: WaveCxSdk.RetryConfig
+  public static let none: WaveCxSdk.RetryConfig
+}
 @objc @_hasMissingDesignatedInitializers final public class WaveCx : ObjectiveC.NSObject {
+  final public var debugMode: Swift.Bool {
+    get
+    set
+  }
+  final public var mockModeConfig: WaveCxSdk.MockModeConfig
+  final public var retryConfig: WaveCxSdk.RetryConfig
   weak final public var delegate: (any WaveCxSdk.WaveCxDelegate)?
   public static func create(organizationCode: Swift.String) -> WaveCxSdk.WaveCx
   public static func create(organizationCode: Swift.String, apiBaseUrl: Swift.String) -> WaveCxSdk.WaveCx
+  public static func create(organizationCode: Swift.String, debugMode: Swift.Bool) -> WaveCxSdk.WaveCx
+  public static func create(organizationCode: Swift.String, apiBaseUrl: Swift.String, debugMode: Swift.Bool) -> WaveCxSdk.WaveCx
+  public static func create(organizationCode: Swift.String, mockModeConfig: WaveCxSdk.MockModeConfig) -> WaveCxSdk.WaveCx
+  public static func create(organizationCode: Swift.String, debugMode: Swift.Bool, mockModeConfig: WaveCxSdk.MockModeConfig) -> WaveCxSdk.WaveCx
+  public static func create(organizationCode: Swift.String, apiBaseUrl: Swift.String, debugMode: Swift.Bool, mockModeConfig: WaveCxSdk.MockModeConfig) -> WaveCxSdk.WaveCx
   public static var shared: WaveCxSdk.WaveCx {
     get
   }
   public static func configureShared(organizationCode: Swift.String)
   public static func configureShared(organizationCode: Swift.String, apiBaseUrl: Swift.String)
+  public static func configureShared(organizationCode: Swift.String, debugMode: Swift.Bool)
+  public static func configureShared(organizationCode: Swift.String, apiBaseUrl: Swift.String, debugMode: Swift.Bool)
+  public static func configureShared(organizationCode: Swift.String, mockModeConfig: WaveCxSdk.MockModeConfig)
+  public static func configureShared(organizationCode: Swift.String, debugMode: Swift.Bool, mockModeConfig: WaveCxSdk.MockModeConfig)
+  public static func configureShared(organizationCode: Swift.String, apiBaseUrl: Swift.String, debugMode: Swift.Bool, mockModeConfig: WaveCxSdk.MockModeConfig)
   final public func startUserSession(userId: Swift.String) async
   final public func startUserSession(userId: Swift.String, userIdVerification: Swift.String) async
   final public func startUserSession(userId: Swift.String, userAttributes: Any) async
@@ -31,7 +82,12 @@ public struct WaveCxConfig {
   final public func hasPopupContentForTriggerPoint(triggerPointCode: Swift.String) -> Swift.Bool
   final public func hasUserTriggeredContentForTriggerPoint(triggerPointCode: Swift.String) -> Swift.Bool
   final public func hasUserTriggeredContent() -> Swift.Bool
-  final public func showUserTriggeredContent()
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func hasContent(for triggerPointCode: Swift.String, presentationType: Swift.String? = nil) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func showUserTriggeredContent(for triggerPointCode: Swift.String? = nil)
+  #endif
   @objc deinit
 }
 public protocol WaveCxDelegate : AnyObject {
@@ -40,4 +96,5 @@ public protocol WaveCxDelegate : AnyObject {
   func onWillShowContent(content: WaveCxSdk.Content, cancel: @escaping () -> Swift.Void)
   func onDidShowContent(content: WaveCxSdk.Content)
   func onContentDismissed()
+  func onContentChanged()
 }

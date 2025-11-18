@@ -1,23 +1,42 @@
-# WaveCX iOS SDK
+# WaveCx iOS SDK
 
-The WaveCx iOS SDK provides tools to integrate targeted content and user-triggered modals into your iOS applications.
+Deliver targeted, contextual content to your iOS users at precisely the right moments in their journey.
 
 ## Features
 
-- Start a user session with attributes.
-- Trigger content based on specific trigger points.
-- Display user-triggered content modals.
+- Start a user session with attributes
+- Trigger content based on specific trigger points
+- Display user-triggered content modals
+- Debug mode for detailed logging
+- Mock mode for testing without API calls
+- Automatic retry with exponential backoff
+- Thread-safe for concurrent access
+
+## Showcase App
+
+A complete example banking application is included in the `WaveCxShowcaseApp` directory. Open `WaveCxShowcaseApp.xcodeproj` to explore:
+
+- User session management
+- Trigger point integration
+- Content availability checks
+- Mock mode configuration
+- Debug logging
+- Analytics tracking
+
+The showcase app demonstrates practical integration patterns for e-commerce, banking, and SaaS applications.
 
 ## Installation
 
 To integrate the WaveCx iOS SDK into your project, add the SDK to your dependencies and ensure it is properly linked in your Xcode project.
 
 ### CocoaPods
-Add the WaveCX pod into your Podfile and run pod install.
+Add the WaveCx SDK to your Podfile and run `pod install`:
 
-    target :YourTargetName do
-      pod 'WaveCxSdk'
-    end
+```ruby
+target :YourTargetName do
+  pod 'WaveCxSdk', '~> 1.0.0'
+end
+```
 
 ## Usage
 
@@ -30,6 +49,65 @@ WaveCx.configureShared(
     organizationCode: "your-organization-code",
 )
 ```
+
+#### Enable Debug Mode
+
+Enable debug mode to see detailed console logs about SDK operations:
+
+```swift
+WaveCx.configureShared(
+    organizationCode: "your-organization-code",
+    debugMode: true
+)
+```
+
+#### Enable Mock Mode
+
+Mock mode allows testing the SDK without making actual API calls. Useful for local development, automated testing, and demos.
+
+**Basic Usage:**
+
+```swift
+let mockConfig = MockModeConfig(enabled: true)
+WaveCx.configureShared(
+    organizationCode: "your-organization-code",
+    mockModeConfig: mockConfig
+)
+```
+
+**With Network Delay Simulation:**
+
+```swift
+let mockConfig = MockModeConfig(
+    enabled: true,
+    networkDelay: 1.5  // Simulate 1.5 second network delay
+)
+WaveCx.configureShared(
+    organizationCode: "your-organization-code",
+    debugMode: true,
+    mockModeConfig: mockConfig
+)
+```
+
+**Respond to Specific Trigger Points Only:**
+
+```swift
+let mockConfig = MockModeConfig(
+    enabled: true,
+    contentStrategy: .specificTriggerPoints(["home-screen", "checkout", "help"])
+)
+WaveCx.configureShared(
+    organizationCode: "your-organization-code",
+    mockModeConfig: mockConfig
+)
+```
+
+When mock mode is enabled:
+- No actual API calls are made
+- With `.allTriggerPoints` strategy: Mock content is generated on-demand for any trigger point
+- With `.specificTriggerPoints` strategy: Mock content is pre-generated only for specified trigger points
+- Network delays can optionally be simulated
+- Custom content can override the defaults
 
 ### 2. Start a User Session
 To start a user session, call the startUserSession method with the user's ID and optional attributes:
@@ -115,8 +193,21 @@ func signIn() async {
 ```
 
 ## Requirements
-- iOS 13.0+
+- iOS 15.6+
 - Swift 5.0+
+- Xcode 14.0+
+
+## Documentation
+
+- **API Reference**: Open `WaveCxSdk.doccarchive` for complete API documentation
+- **Changelog**: See [CHANGELOG.md](CHANGELOG.md) for version history
+- **Release Notes**: See [RELEASE_NOTES.md](RELEASE_NOTES.md) for release announcements
+- **Showcase App**: Explore `WaveCxShowcaseApp` for complete examples
+
+## Support
+
+- **Issues**: Report bugs at [GitHub Issues](https://github.com/wavecx/wavecx-ios/issues)
+- **Contact**: Reach out to your WaveCx representative
 
 ## License
-This project is licensed under the Apache License 2.0. See the LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.

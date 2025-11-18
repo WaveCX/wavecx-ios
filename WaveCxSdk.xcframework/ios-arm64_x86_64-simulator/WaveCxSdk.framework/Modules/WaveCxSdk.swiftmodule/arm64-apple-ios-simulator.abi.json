@@ -20,16 +20,388 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WaveCxSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "WaveCxSdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WaveCxSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MockContentStrategy",
+        "printedName": "MockContentStrategy",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "allTriggerPoints",
+            "printedName": "allTriggerPoints",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WaveCxSdk.MockContentStrategy.Type) -> WaveCxSdk.MockContentStrategy",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MockContentStrategy",
+                    "printedName": "WaveCxSdk.MockContentStrategy",
+                    "usr": "s:9WaveCxSdk19MockContentStrategyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WaveCxSdk.MockContentStrategy.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MockContentStrategy",
+                        "printedName": "WaveCxSdk.MockContentStrategy",
+                        "usr": "s:9WaveCxSdk19MockContentStrategyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9WaveCxSdk19MockContentStrategyO16allTriggerPointsyA2CmF",
+            "mangledName": "$s9WaveCxSdk19MockContentStrategyO16allTriggerPointsyA2CmF",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "specificTriggerPoints",
+            "printedName": "specificTriggerPoints",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WaveCxSdk.MockContentStrategy.Type) -> ([Swift.String]) -> WaveCxSdk.MockContentStrategy",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String]) -> WaveCxSdk.MockContentStrategy",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MockContentStrategy",
+                        "printedName": "WaveCxSdk.MockContentStrategy",
+                        "usr": "s:9WaveCxSdk19MockContentStrategyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WaveCxSdk.MockContentStrategy.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MockContentStrategy",
+                        "printedName": "WaveCxSdk.MockContentStrategy",
+                        "usr": "s:9WaveCxSdk19MockContentStrategyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9WaveCxSdk19MockContentStrategyO21specificTriggerPointsyACSaySSGcACmF",
+            "mangledName": "$s9WaveCxSdk19MockContentStrategyO21specificTriggerPointsyACSaySSGcACmF",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9WaveCxSdk19MockContentStrategyO",
+        "mangledName": "$s9WaveCxSdk19MockContentStrategyO",
+        "moduleName": "WaveCxSdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MockModeConfig",
+        "printedName": "MockModeConfig",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(enabled:networkDelay:contentStrategy:customContent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MockModeConfig",
+                "printedName": "WaveCxSdk.MockModeConfig",
+                "usr": "s:9WaveCxSdk14MockModeConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MockContentStrategy",
+                "printedName": "WaveCxSdk.MockContentStrategy",
+                "hasDefaultArg": true,
+                "usr": "s:9WaveCxSdk19MockContentStrategyO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : [WaveCxSdk.Content]]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : [WaveCxSdk.Content]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[WaveCxSdk.Content]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Content",
+                            "printedName": "WaveCxSdk.Content",
+                            "usr": "s:9WaveCxSdk7ContentV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9WaveCxSdk14MockModeConfigV7enabled12networkDelay15contentStrategy13customContentACSb_SdSgAA0dmK0OSDySSSayAA0M0VGGSgtcfc",
+            "mangledName": "$s9WaveCxSdk14MockModeConfigV7enabled12networkDelay15contentStrategy13customContentACSb_SdSgAA0dmK0OSDySSSayAA0M0VGGSgtcfc",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9WaveCxSdk14MockModeConfigV",
+        "mangledName": "$s9WaveCxSdk14MockModeConfigV",
+        "moduleName": "WaveCxSdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "WaveCxSdk"
       },
       {
+        "kind": "Var",
+        "name": "WaveCxVersion",
+        "printedName": "WaveCxVersion",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:9WaveCxSdk0aB7VersionSSvp",
+        "mangledName": "$s9WaveCxSdk0aB7VersionSSvp",
+        "moduleName": "WaveCxSdk",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "isLet": true,
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:9WaveCxSdk0aB7VersionSSvg",
+            "mangledName": "$s9WaveCxSdk0aB7VersionSSvg",
+            "moduleName": "WaveCxSdk",
+            "implicit": true,
+            "accessorKind": "get"
+          }
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "Content",
         "printedName": "Content",
         "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(triggerPoint:viewUrl:presentationType:mobileModal:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Content",
+                "printedName": "WaveCxSdk.Content",
+                "usr": "s:9WaveCxSdk7ContentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WaveCxSdk.ModalConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModalConfig",
+                    "printedName": "WaveCxSdk.ModalConfig",
+                    "usr": "s:9WaveCxSdk11ModalConfigV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9WaveCxSdk7ContentV12triggerPoint7viewUrl16presentationType11mobileModalACSS_S2SAA0L6ConfigVSgtcfc",
+            "mangledName": "$s9WaveCxSdk7ContentV12triggerPoint7viewUrl16presentationType11mobileModalACSS_S2SAA0L6ConfigVSgtcfc",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -55,6 +427,31 @@
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk7ContentV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9WaveCxSdk7ContentV6encode2toys7Encoder_p_tKF",
+            "moduleName": "WaveCxSdk",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -62,7 +459,8 @@
         "mangledName": "$s9WaveCxSdk7ContentV",
         "moduleName": "WaveCxSdk",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -85,6 +483,325 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CloseButtonConfig",
+        "printedName": "CloseButtonConfig",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(style:label:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CloseButtonConfig",
+                "printedName": "WaveCxSdk.CloseButtonConfig",
+                "usr": "s:9WaveCxSdk17CloseButtonConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9WaveCxSdk17CloseButtonConfigV5style5labelACSS_SSSgtcfc",
+            "mangledName": "$s9WaveCxSdk17CloseButtonConfigV5style5labelACSS_SSSgtcfc",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CloseButtonConfig",
+                "printedName": "WaveCxSdk.CloseButtonConfig",
+                "usr": "s:9WaveCxSdk17CloseButtonConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9WaveCxSdk17CloseButtonConfigV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9WaveCxSdk17CloseButtonConfigV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "WaveCxSdk",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk17CloseButtonConfigV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9WaveCxSdk17CloseButtonConfigV6encode2toys7Encoder_p_tKF",
+            "moduleName": "WaveCxSdk",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9WaveCxSdk17CloseButtonConfigV",
+        "mangledName": "$s9WaveCxSdk17CloseButtonConfigV",
+        "moduleName": "WaveCxSdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ModalConfig",
+        "printedName": "ModalConfig",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(type:title:headerColor:closeButton:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModalConfig",
+                "printedName": "WaveCxSdk.ModalConfig",
+                "usr": "s:9WaveCxSdk11ModalConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WaveCxSdk.CloseButtonConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CloseButtonConfig",
+                    "printedName": "WaveCxSdk.CloseButtonConfig",
+                    "usr": "s:9WaveCxSdk17CloseButtonConfigV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9WaveCxSdk11ModalConfigV4type5title11headerColor11closeButtonACSSSg_A2hA05ClosekE0VSgtcfc",
+            "mangledName": "$s9WaveCxSdk11ModalConfigV4type5title11headerColor11closeButtonACSSSg_A2hA05ClosekE0VSgtcfc",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModalConfig",
+                "printedName": "WaveCxSdk.ModalConfig",
+                "usr": "s:9WaveCxSdk11ModalConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9WaveCxSdk11ModalConfigV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9WaveCxSdk11ModalConfigV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "WaveCxSdk",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk11ModalConfigV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9WaveCxSdk11ModalConfigV6encode2toys7Encoder_p_tKF",
+            "moduleName": "WaveCxSdk",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9WaveCxSdk11ModalConfigV",
+        "mangledName": "$s9WaveCxSdk11ModalConfigV",
+        "moduleName": "WaveCxSdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -118,9 +835,477 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "RetryConfig",
+        "printedName": "RetryConfig",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(maxAttempts:initialDelay:maxDelay:multiplier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RetryConfig",
+                "printedName": "WaveCxSdk.RetryConfig",
+                "usr": "s:9WaveCxSdk11RetryConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9WaveCxSdk11RetryConfigV11maxAttempts12initialDelay0fI010multiplierACSi_S3dtcfc",
+            "mangledName": "$s9WaveCxSdk11RetryConfigV11maxAttempts12initialDelay0fI010multiplierACSi_S3dtcfc",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RetryConfig",
+                "printedName": "WaveCxSdk.RetryConfig",
+                "usr": "s:9WaveCxSdk11RetryConfigV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9WaveCxSdk11RetryConfigV7defaultACvpZ",
+            "mangledName": "$s9WaveCxSdk11RetryConfigV7defaultACvpZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RetryConfig",
+                    "printedName": "WaveCxSdk.RetryConfig",
+                    "usr": "s:9WaveCxSdk11RetryConfigV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9WaveCxSdk11RetryConfigV7defaultACvgZ",
+                "mangledName": "$s9WaveCxSdk11RetryConfigV7defaultACvgZ",
+                "moduleName": "WaveCxSdk",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RetryConfig",
+                "printedName": "WaveCxSdk.RetryConfig",
+                "usr": "s:9WaveCxSdk11RetryConfigV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9WaveCxSdk11RetryConfigV4noneACvpZ",
+            "mangledName": "$s9WaveCxSdk11RetryConfigV4noneACvpZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RetryConfig",
+                    "printedName": "WaveCxSdk.RetryConfig",
+                    "usr": "s:9WaveCxSdk11RetryConfigV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9WaveCxSdk11RetryConfigV4noneACvgZ",
+                "mangledName": "$s9WaveCxSdk11RetryConfigV4noneACvgZ",
+                "moduleName": "WaveCxSdk",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9WaveCxSdk11RetryConfigV",
+        "mangledName": "$s9WaveCxSdk11RetryConfigV",
+        "moduleName": "WaveCxSdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "WaveCx",
         "printedName": "WaveCx",
         "children": [
+          {
+            "kind": "Var",
+            "name": "debugMode",
+            "printedName": "debugMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9WaveCxSdk0aB0C9debugModeSbvp",
+            "mangledName": "$s9WaveCxSdk0aB0C9debugModeSbvp",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9WaveCxSdk0aB0C9debugModeSbvg",
+                "mangledName": "$s9WaveCxSdk0aB0C9debugModeSbvg",
+                "moduleName": "WaveCxSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9WaveCxSdk0aB0C9debugModeSbvs",
+                "mangledName": "$s9WaveCxSdk0aB0C9debugModeSbvs",
+                "moduleName": "WaveCxSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9WaveCxSdk0aB0C9debugModeSbvM",
+                "mangledName": "$s9WaveCxSdk0aB0C9debugModeSbvM",
+                "moduleName": "WaveCxSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mockModeConfig",
+            "printedName": "mockModeConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MockModeConfig",
+                "printedName": "WaveCxSdk.MockModeConfig",
+                "usr": "s:9WaveCxSdk14MockModeConfigV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9WaveCxSdk0aB0C14mockModeConfigAA04MockeF0Vvp",
+            "mangledName": "$s9WaveCxSdk0aB0C14mockModeConfigAA04MockeF0Vvp",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MockModeConfig",
+                    "printedName": "WaveCxSdk.MockModeConfig",
+                    "usr": "s:9WaveCxSdk14MockModeConfigV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9WaveCxSdk0aB0C14mockModeConfigAA04MockeF0Vvg",
+                "mangledName": "$s9WaveCxSdk0aB0C14mockModeConfigAA04MockeF0Vvg",
+                "moduleName": "WaveCxSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MockModeConfig",
+                    "printedName": "WaveCxSdk.MockModeConfig",
+                    "usr": "s:9WaveCxSdk14MockModeConfigV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9WaveCxSdk0aB0C14mockModeConfigAA04MockeF0Vvs",
+                "mangledName": "$s9WaveCxSdk0aB0C14mockModeConfigAA04MockeF0Vvs",
+                "moduleName": "WaveCxSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9WaveCxSdk0aB0C14mockModeConfigAA04MockeF0VvM",
+                "mangledName": "$s9WaveCxSdk0aB0C14mockModeConfigAA04MockeF0VvM",
+                "moduleName": "WaveCxSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "retryConfig",
+            "printedName": "retryConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RetryConfig",
+                "printedName": "WaveCxSdk.RetryConfig",
+                "usr": "s:9WaveCxSdk11RetryConfigV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9WaveCxSdk0aB0C11retryConfigAA05RetryE0Vvp",
+            "mangledName": "$s9WaveCxSdk0aB0C11retryConfigAA05RetryE0Vvp",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RetryConfig",
+                    "printedName": "WaveCxSdk.RetryConfig",
+                    "usr": "s:9WaveCxSdk11RetryConfigV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9WaveCxSdk0aB0C11retryConfigAA05RetryE0Vvg",
+                "mangledName": "$s9WaveCxSdk0aB0C11retryConfigAA05RetryE0Vvg",
+                "moduleName": "WaveCxSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RetryConfig",
+                    "printedName": "WaveCxSdk.RetryConfig",
+                    "usr": "s:9WaveCxSdk11RetryConfigV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9WaveCxSdk0aB0C11retryConfigAA05RetryE0Vvs",
+                "mangledName": "$s9WaveCxSdk0aB0C11retryConfigAA05RetryE0Vvs",
+                "moduleName": "WaveCxSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9WaveCxSdk0aB0C11retryConfigAA05RetryE0VvM",
+                "mangledName": "$s9WaveCxSdk0aB0C11retryConfigAA05RetryE0VvM",
+                "moduleName": "WaveCxSdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "delegate",
@@ -141,7 +1326,8 @@
               "Final",
               "HasStorage",
               "ReferenceOwnership",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "ownership": 1,
             "hasStorage": true,
@@ -259,7 +1445,8 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -294,7 +1481,212 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(organizationCode:debugMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WaveCx",
+                "printedName": "WaveCxSdk.WaveCx",
+                "usr": "c:@M@WaveCxSdk@objc(cs)WaveCx"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C6create16organizationCode9debugModeACSS_SbtFZ",
+            "mangledName": "$s9WaveCxSdk0aB0C6create16organizationCode9debugModeACSS_SbtFZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(organizationCode:apiBaseUrl:debugMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WaveCx",
+                "printedName": "WaveCxSdk.WaveCx",
+                "usr": "c:@M@WaveCxSdk@objc(cs)WaveCx"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C6create16organizationCode10apiBaseUrl9debugModeACSS_SSSbtFZ",
+            "mangledName": "$s9WaveCxSdk0aB0C6create16organizationCode10apiBaseUrl9debugModeACSS_SSSbtFZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(organizationCode:mockModeConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WaveCx",
+                "printedName": "WaveCxSdk.WaveCx",
+                "usr": "c:@M@WaveCxSdk@objc(cs)WaveCx"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MockModeConfig",
+                "printedName": "WaveCxSdk.MockModeConfig",
+                "usr": "s:9WaveCxSdk14MockModeConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C6create16organizationCode14mockModeConfigACSS_AA04MockhI0VtFZ",
+            "mangledName": "$s9WaveCxSdk0aB0C6create16organizationCode14mockModeConfigACSS_AA04MockhI0VtFZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(organizationCode:debugMode:mockModeConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WaveCx",
+                "printedName": "WaveCxSdk.WaveCx",
+                "usr": "c:@M@WaveCxSdk@objc(cs)WaveCx"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MockModeConfig",
+                "printedName": "WaveCxSdk.MockModeConfig",
+                "usr": "s:9WaveCxSdk14MockModeConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C6create16organizationCode9debugMode04mockH6ConfigACSS_SbAA04MockhJ0VtFZ",
+            "mangledName": "$s9WaveCxSdk0aB0C6create16organizationCode9debugMode04mockH6ConfigACSS_SbAA04MockhJ0VtFZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(organizationCode:apiBaseUrl:debugMode:mockModeConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WaveCx",
+                "printedName": "WaveCxSdk.WaveCx",
+                "usr": "c:@M@WaveCxSdk@objc(cs)WaveCx"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MockModeConfig",
+                "printedName": "WaveCxSdk.MockModeConfig",
+                "usr": "s:9WaveCxSdk14MockModeConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C6create16organizationCode10apiBaseUrl9debugMode04mockK6ConfigACSS_SSSbAA04MockkM0VtFZ",
+            "mangledName": "$s9WaveCxSdk0aB0C6create16organizationCode10apiBaseUrl9debugMode04mockK6ConfigACSS_SSSbAA04MockkM0VtFZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -317,7 +1709,8 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -368,7 +1761,8 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -402,7 +1796,207 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureShared",
+            "printedName": "configureShared(organizationCode:debugMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C15configureShared16organizationCode9debugModeySS_SbtFZ",
+            "mangledName": "$s9WaveCxSdk0aB0C15configureShared16organizationCode9debugModeySS_SbtFZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureShared",
+            "printedName": "configureShared(organizationCode:apiBaseUrl:debugMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C15configureShared16organizationCode10apiBaseUrl9debugModeySS_SSSbtFZ",
+            "mangledName": "$s9WaveCxSdk0aB0C15configureShared16organizationCode10apiBaseUrl9debugModeySS_SSSbtFZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureShared",
+            "printedName": "configureShared(organizationCode:mockModeConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MockModeConfig",
+                "printedName": "WaveCxSdk.MockModeConfig",
+                "usr": "s:9WaveCxSdk14MockModeConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C15configureShared16organizationCode14mockModeConfigySS_AA04MockiJ0VtFZ",
+            "mangledName": "$s9WaveCxSdk0aB0C15configureShared16organizationCode14mockModeConfigySS_AA04MockiJ0VtFZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureShared",
+            "printedName": "configureShared(organizationCode:debugMode:mockModeConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MockModeConfig",
+                "printedName": "WaveCxSdk.MockModeConfig",
+                "usr": "s:9WaveCxSdk14MockModeConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C15configureShared16organizationCode9debugMode04mockI6ConfigySS_SbAA04MockiK0VtFZ",
+            "mangledName": "$s9WaveCxSdk0aB0C15configureShared16organizationCode9debugMode04mockI6ConfigySS_SbAA04MockiK0VtFZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureShared",
+            "printedName": "configureShared(organizationCode:apiBaseUrl:debugMode:mockModeConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MockModeConfig",
+                "printedName": "WaveCxSdk.MockModeConfig",
+                "usr": "s:9WaveCxSdk14MockModeConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C15configureShared16organizationCode10apiBaseUrl9debugMode04mockL6ConfigySS_SSSbAA04MocklN0VtFZ",
+            "mangledName": "$s9WaveCxSdk0aB0C15configureShared16organizationCode10apiBaseUrl9debugMode04mockL6ConfigySS_SSSbAA04MocklN0VtFZ",
+            "moduleName": "WaveCxSdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -429,7 +2023,8 @@
             "moduleName": "WaveCxSdk",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -462,7 +2057,8 @@
             "moduleName": "WaveCxSdk",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -494,7 +2090,8 @@
             "moduleName": "WaveCxSdk",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -515,7 +2112,8 @@
             "moduleName": "WaveCxSdk",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -542,7 +2140,8 @@
             "moduleName": "WaveCxSdk",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -570,7 +2169,8 @@
             "moduleName": "WaveCxSdk",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -598,7 +2198,8 @@
             "moduleName": "WaveCxSdk",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -620,28 +2221,89 @@
             "moduleName": "WaveCxSdk",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hasContent",
+            "printedName": "hasContent(for:presentationType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB0C10hasContent3for16presentationTypeSbSS_SSSgtF",
+            "mangledName": "$s9WaveCxSdk0aB0C10hasContent3for16presentationTypeSbSS_SSSgtF",
+            "moduleName": "WaveCxSdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
             "name": "showUserTriggeredContent",
-            "printedName": "showUserTriggeredContent()",
+            "printedName": "showUserTriggeredContent(for:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9WaveCxSdk0aB0C24showUserTriggeredContentyyF",
-            "mangledName": "$s9WaveCxSdk0aB0C24showUserTriggeredContentyyF",
+            "usr": "s:9WaveCxSdk0aB0C24showUserTriggeredContent3forySSSg_tF",
+            "mangledName": "$s9WaveCxSdk0aB0C24showUserTriggeredContent3forySSSg_tF",
             "moduleName": "WaveCxSdk",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -679,6 +2341,7 @@
         "declAttributes": [
           "Final",
           "AccessControl",
+          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -788,6 +2451,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
             "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -823,6 +2489,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
             "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -867,6 +2536,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
             "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -894,6 +2566,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
             "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -915,6 +2590,33 @@
             "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
             "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onContentChanged",
+            "printedName": "onContentChanged()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9WaveCxSdk0aB8DelegateP16onContentChangedyyF",
+            "mangledName": "$s9WaveCxSdk0aB8DelegateP16onContentChangedyyF",
+            "moduleName": "WaveCxSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : WaveCxSdk.WaveCxDelegate>",
+            "sugared_genericSig": "<Self where Self : WaveCxSdk.WaveCxDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
@@ -926,7 +2628,8 @@
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -957,39 +2660,172 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/wavecx-ios\/WaveCx\/WaveCxSdk\/FeaturetteViewController.swift",
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/FeaturetteViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 526,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/FeaturetteViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 557,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/FeaturetteViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 602,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/FeaturetteViewController.swift",
       "kind": "StringLiteral",
-      "offset": 546,
+      "offset": 692,
       "length": 14,
       "value": "\"chevron.left\""
     },
     {
-      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
-      "kind": "Array",
-      "offset": 2694,
-      "length": 2,
-      "value": "[]"
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 189,
+      "length": 16,
+      "value": "\"com.wavecx.sdk\""
     },
     {
-      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 217,
+      "length": 8,
+      "value": "\"WaveCx\""
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/MockMode.swift",
       "kind": "BooleanLiteral",
-      "offset": 2853,
+      "offset": 3306,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
       "kind": "StringLiteral",
-      "offset": 3577,
+      "offset": 68,
+      "length": 7,
+      "value": "\"1.0.0\""
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7636,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "FloatLiteral",
+      "offset": 7676,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "FloatLiteral",
+      "offset": 7714,
+      "length": 4,
+      "value": "32.0"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "FloatLiteral",
+      "offset": 7749,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8190,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8207,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8220,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "FloatLiteral",
+      "offset": 8235,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "StringLiteral",
+      "offset": 9237,
+      "length": 21,
+      "value": "\"com.wavecx.sdk.sync\""
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "Array",
+      "offset": 9600,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9687,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10053,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12682,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "kind": "StringLiteral",
+      "offset": 18355,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WaveCx.swift",
       "kind": "StringLiteral",
-      "offset": 3593,
+      "offset": 18371,
       "length": 24,
       "value": "\"https:\/\/api.wavecx.com\""
+    },
+    {
+      "filePath": "\/Users\/jonathanraftery\/work\/wavecx\/sdks\/wavecx-ios\/WaveCx\/WaveCxSdk\/WindowManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 75,
+      "length": 5,
+      "value": "false"
     }
   ]
 }
