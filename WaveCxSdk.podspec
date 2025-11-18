@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   DESC
 
   s.homepage         = 'https://github.com/wavecx/wavecx-ios'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'Apache 2.0', :text => 'See LICENSE at https://github.com/WaveCX/wavecx-ios/blob/main/LICENSE' }
   s.author           = { 'WaveCx' => 'support@wavecx.com' }
   s.source           = {
     :http => 'https://github.com/wavecx/wavecx-ios/releases/download/v1.0.0/WaveCxSdk.xcframework.zip'
